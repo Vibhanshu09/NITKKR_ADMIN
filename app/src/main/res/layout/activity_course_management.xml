@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    tools:context=".CourseManagement">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/course_mng_btn_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <Button
+                android:id="@+id/btn_add_new_course_start"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_enabled"
+                android:textColor="@android:color/white"
+                android:layout_margin="8dp"
+                android:text="Add New Course"
+                android:layout_gravity="center" />
+            <Button
+                android:id="@+id/btn_add_new_branch_start"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_enabled"
+                android:textColor="@android:color/white"
+                android:layout_margin="8dp"
+                android:text="Add New Branch"
+                android:layout_gravity="center" />
+            <Button
+                android:id="@+id/btn_update_branch_section_start"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_enabled"
+                android:textColor="@android:color/white"
+                android:layout_margin="8dp"
+                android:text="Add Branch Sections"
+                android:layout_gravity="center" />
+            <Button
+                android:id="@+id/btn_add_new_subject_start"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_enabled"
+                android:textColor="@android:color/white"
+                android:layout_margin="8dp"
+                android:text="Add new subject"
+                android:layout_gravity="center" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/add_new_course_ll"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:text="Course Code : " />
+                <EditText
+                    android:id="@+id/et_new_course_code"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:hint="BT/MT/MB"
+                    android:maxLines="1"
+                    android:maxLength="10"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:text="Course Name : " />
+                <EditText
+                    android:id="@+id/et_new_course_name"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:hint="BTech/MTech/MBA"
+                    android:maxLines="1"
+                    android:maxLength="10"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:text="No. of Semesters : " />
+                <EditText
+                    android:id="@+id/et_no_of_sem"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:hint="4/6/8/.."
+                    android:maxLines="1"
+                    android:maxLength="10"/>
+            </LinearLayout>
+            <Button
+                android:id="@+id/btn_add_new_course_submit"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:layout_marginTop="8dp"
+                android:text="Register Course"
+                android:layout_gravity="center"
+                android:background="@drawable/button_enabled" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/add_new_branch_ll"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:text="Select Course : " />
+                <Spinner
+                    android:id="@+id/spinner_all_course_1"
+                    android:layout_width="200dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:text="Branch Code : " />
+                <EditText
+                    android:id="@+id/et_new_branch_code"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:hint="CSE/CE/ME"
+                    android:maxLines="1"
+                    android:maxLength="100"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:text="Branch Name : " />
+                <EditText
+                    android:id="@+id/et_new_branch_name"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:hint="Computer Engineering"
+                    android:maxLines="1"
+                    android:maxLength="100"/>
+            </LinearLayout>
+            <Button
+                android:id="@+id/btn_add_new_branch_submit"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:layout_marginTop="8dp"
+                android:text="Register Branch"
+                android:layout_gravity="center"
+                android:background="@drawable/button_enabled" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/add_branch_section_ll"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:text="Select Course : " />
+                <Spinner
+                    android:id="@+id/spinner_all_course_2"
+                    android:layout_width="200dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:text="Select Branch : " />
+                <Spinner
+                    android:id="@+id/spinner_all_branch"
+                    android:layout_width="200dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:text="Select Semester : " />
+                <Spinner
+                    android:id="@+id/spinner_semester"
+                    android:layout_width="200dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:text="No. of Sections : " />
+                <EditText
+                    android:id="@+id/et_add_branch_sections"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:hint="3/4/5/..."
+                    android:maxLines="1"
+                    android:maxLength="100"/>
+            </LinearLayout>
+            <Button
+                android:id="@+id/btn_add_branch_section_submit"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:layout_marginTop="8dp"
+                android:text="Add Branch Sections"
+                android:layout_gravity="center"
+                android:background="@drawable/button_enabled" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/add_new_subject_ll"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="134dp"
+                    android:layout_height="wrap_content"
+                    android:text="Select Branch : " />
+                <Spinner
+                    android:id="@+id/spinner_all_branch_sub"
+                    android:layout_width="200dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:text="Subject Code : " />
+                <EditText
+                    android:id="@+id/et_new_subject_code"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:maxLength="100"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:text="Subject Name : " />
+                <EditText
+                    android:id="@+id/et_new_subject_name"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:maxLength="100"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:text="Subject Type : " />
+
+                <RadioGroup
+                    android:id="@+id/rg_new_subject_type"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_sub_type_theory"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="8dp"
+                        android:text="Theory" />
+
+                    <RadioButton
+                        android:id="@+id/rb_sub_type_lab"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:text="Lab" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+            <Button
+                android:id="@+id/btn_add_new_subject_submit"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:layout_marginTop="8dp"
+                android:text="Add this subject"
+                android:layout_gravity="center"
+                android:background="@drawable/button_enabled" />
+
+        </LinearLayout>
+
+
+
+
+
+
+    </LinearLayout>
+
+
+</ScrollView>

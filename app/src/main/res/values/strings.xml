@@ -1,0 +1,88 @@
+<resources>
+    <string name="app_name">NITKKR_ADMIN</string>
+    <string name="welcome_greeting">Welcome To NITKKR ADMIN Portal (ERP)</string>
+    <string name="connecting">Connecting to Server&#8230;</string>
+    <string name="login_to_erp">Login To NITKKR ERP</string>
+    <string name="your_id">Your ID</string>
+    <string name="password">Password</string>
+    <string name="remember">Remember Me</string>
+    <string name="forgot_pass">Forgot Password?</string>
+    <string name="login">Login</string>
+    <string name="invalid_id">Invalid ID</string>
+    <string name="action_feedback">Feedback</string>
+    <string name="log_out">Log out</string>
+
+    <string name="change_password">Change Password</string>
+    <string name="old_pass">Old Password</string>
+    <string name="new_pass">New Password</string>
+    <string name="con_pass">Confirm Password</string>
+
+    <string name="home_card_text">Home</string>
+    <string name="add_student">Add Student</string>
+    <string name="add_employee">Add Employee</string>
+    <string name="fee">Fee</string>
+    <string name="subject_allocation">Subject Allocation</string>
+    <string name="course_management">Course Management</string>
+    <string name="employee_management">Employee Management</string>
+    <string name="student_management">Student Management</string>
+
+    <string name="stud_basic_dtl">Student Basic Details</string>
+    <string name="stud_eno">Enrollment No.</string>
+    <string name="stud_name">Name</string>
+    <string name="stud_email">Email</string>
+    <string name="stud_mobile">Student Mobile</string>
+    <string name="stud_parent_mobile">Parent Mobile</string>
+    <string name="stud_father_name">Father\'s name</string>
+    <string name="stud_mother_name">Mother\'s name</string>
+    <string name="stud_category">Category</string>
+    <string-array name="stud_category_array">
+        <item>General</item>
+        <item>OBC</item>
+        <item>SC</item>
+        <item>ST</item>
+    </string-array>
+    <string name="stud_gender">Gender</string>
+    <string-array name="stud_gender_array">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Other</item>
+    </string-array>
+    <string name="stud_dob">Date of birth</string>
+    <string name="stud_doa">Date of admission</string>
+    <string name="date_formate">YYYY-MM-DD</string>
+    <string name="stud_p_address">Permanent Address</string>
+    <string name="stud_c_address">Correspondence Address</string>
+    <string name="stud_image">Student Image</string>
+    <string name="stud_image_choose">Choose an Image</string>
+
+    <string name="stud_qualification_dtl">Student Qualification Details</string>
+    <string name="stud_stream">Stream</string>
+    <string name="stud_pass_year">Passing year</string>
+    <string name="stud_school">School</string>
+    <string name="stud_percentage">Percentage/CGPA</string>
+
+    <string name="stud_academic_dtl">Student Academic Details</string>
+    <string name="stud_course">Course</string>
+    <string name="stud_branch">Branch</string>
+    <string name="stud_semester">Semester</string>
+    <string name="stud_section">Section</string>
+    <string name="submit">Submit</string>
+
+    <string name="emp_bsk_dtl">Employee Basic Details</string>
+    <string name="emp_id">Employee ID</string>
+    <string name="emp_role">Role</string>
+    <string name="admin">Admin</string>
+    <string name="faculty">Faculty</string>
+    <string name="department">Department</string>
+    <string name="emp_doj">Date of joining</string>
+    <string name="emp_image">Employee Image</string>
+    <string name="mobile">Mobile</string>
+
+    <string name="receipt_no">Receipt No.</string>
+    <string name="paid_date">Paid Date</string>
+    <string name="paid_amount">Paid Amount</string>
+    <string name="due_amount">Due Amount</string>
+
+
+</resources>
+

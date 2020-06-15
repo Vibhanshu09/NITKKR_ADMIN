@@ -1,0 +1,2 @@
+rootProject.name='NITKKR_ADMIN'
+include ':app'
